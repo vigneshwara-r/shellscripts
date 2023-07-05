@@ -4,7 +4,7 @@ function rename() {
         do
                 extension="${file##*.}"
                 filename="${file%.*}"
-                mv "$file" "${filename}_27062023.${extension}"
+                mv "$file" "${filename}_`date "+%F"`.${extension}"
         done
 }
 rename
